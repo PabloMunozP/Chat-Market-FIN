@@ -19,20 +19,12 @@ const NavBar = item => {
       <Container>
         <Navbar.Brand>
           <Link to="/">
-            <img src={logo} alt="" height="20" /> Foodcenter Concepción
+            <img src={logo} alt="" height="20" /> TeLoCambio
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Container>
-              <Link to="/about">Nosotros</Link>
-            </Container>
-
-            <Container>
-              <Link to="/contact">Contacto</Link>
-            </Container>
-
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
               <NavDropdown.Item>
                 <Link className="Link" to="/category/arena">
