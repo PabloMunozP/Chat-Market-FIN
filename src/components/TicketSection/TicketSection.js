@@ -1,29 +1,16 @@
 import { TicketContainer, Ticket, Heading, Button, TextContainer, DateText, UsernameText } from "./TicketSectionElements";
 import productServices from "../../services/productServices";
 
-export const TicketSection = () => {
-    return <TicketContainer>
-              <Heading>Tickets </Heading>
+export const TicketSection = ({items}) => {
+    return items.map((item) => (
+      <>
                <Ticket>
                 <TextContainer>
-                     <DateText>Fecha </DateText>
-                    <UsernameText>Usuario</UsernameText>
+                     <DateText>{item.date} </DateText>
+                    <UsernameText>{item.name}</UsernameText>
                  </TextContainer>
-                  <Button>Ofertar</Button>
-              </Ticket> 
-              <Ticket>
-                <TextContainer>
-                     <DateText>Fecha </DateText>
-                    <UsernameText>Usuario</UsernameText>
-                 </TextContainer>
-                  <Button>Ofertar</Button>
-              </Ticket> 
-              <Ticket>
-                <TextContainer>
-                     <DateText>Fecha </DateText>
-                    <UsernameText>Usuario</UsernameText>
-                 </TextContainer>
-                  <Button>Ofertar</Button>
-              </Ticket> 
-              
-        </TicketContainer>}
+                  <Button to={`/detail/${item.id}`}>Ofertar</Button>
+              </Ticket>
+              </>
+    ))             
+       }

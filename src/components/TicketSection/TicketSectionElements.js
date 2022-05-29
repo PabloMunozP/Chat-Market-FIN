@@ -1,6 +1,6 @@
 import { stepLabelClasses } from "@mui/material";
 import styled from "styled-components";
-
+import {Link} from "react-router-dom";
 export const TicketContainer = styled.div`
     width: 80%;
     display: flex;
@@ -23,8 +23,10 @@ export const Heading = styled.h1`
     font-size: 32px;
 `
 
-export const Button = styled.div`
+export const Button = styled(Link)`
     display: flex;
+    text-decoration: none;
+    color: black;
     justify-content: center;
     align-items: center;
     width: 30%;

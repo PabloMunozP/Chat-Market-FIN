@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./views/Home";
 import Post from "./views/Post"
 import MyTickets from "./views/MyTickets";
+import Detail from "./views/Detail";
 
 // Provider
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/swap" element={<Post />}/>
         <Route path="/mytickets" element={<MyTickets />}/> 
+        <Route path="/detail/:id" element={<Detail />}/> 
       </Routes>
     </Router>
     

@@ -1,12 +1,9 @@
 import React from "react";
 import { MainContainer } from "../components/MainContainer";
-import { MyTicketSection } from "../components/MyTicketsSection/MyTicketSection";
 import {Sidebar} from "../components/Sidebar/Sidebar";
-import { TicketContainer, Heading } from "../components/MyTicketsSection/MyTicketSectionElements"
 import {Wrapper} from "../components/Wrapper";
-
-function MyTickets() {
-  const dumbData = [{date:"22/01"},{date:"26/05"}]
+import DetailSection from "../components/DetailSection/DetailSection"
+function Detail() {
   return (
     // <div>
     //   </div>main className="listaProductos"></main>
@@ -18,13 +15,10 @@ function MyTickets() {
     <Wrapper>
       <MainContainer>
         <Sidebar />
-        <TicketContainer>
-          <Heading>Tickets </Heading>
-        <MyTicketSection items={dumbData} />
-        </TicketContainer>
+        <DetailSection />
       </MainContainer>
     </Wrapper>
   );
 }
 
-export default MyTickets;
+export default Detail;
