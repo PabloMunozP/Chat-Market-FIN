@@ -5,12 +5,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Componentes
 import NavBar from "./components/NavBar";
+import TicketDetailContainer from "./components/TicketDetailContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //las Views
 import Home from "./views/Home";
-
-// Provider
 
 function App() {
   return (
@@ -21,6 +20,7 @@ function App() {
           <NavBar></NavBar>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/detail/:id" element={<TicketDetailContainer />} />
           </Routes>
         </header>
       </div>

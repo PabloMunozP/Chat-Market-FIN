@@ -2,7 +2,8 @@ import logo from "../assets/logo.svg";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import Login from "../views/Login";
 
 // este navbar es un componente sacado de react-bootstrap
 const NavBar = item => {
@@ -24,28 +25,12 @@ const NavBar = item => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item>
-                <Link className="Link" to="/category/arena">
-                  Arenas sanitarias
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="Link" to="/category/perro">
-                  Alimento para perros
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="Link" to="/category/gato">
-                  Alimento para gatos
-                </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+          <Nav className="me-auto"></Nav>
           <Nav>
             <Container>
-              <Link className="Link" to="/cart"></Link>
+              <Link className="Link" to="/login">
+                <Login></Login>
+              </Link>
             </Container>
           </Nav>
         </Navbar.Collapse>
