@@ -1,8 +1,16 @@
-Para correrlo:
+Para correrlo la parte de react:
+
+### cd /finchat
 
 ### npm install
 
 ### npm start
+
+Para correr la parte del django:
+
+### cd /project
+
+### py manage.py runserver
 
 <!-- # Getting Started with Create React App
 
