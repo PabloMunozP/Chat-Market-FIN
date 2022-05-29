@@ -1,18 +1,18 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-const TicketOferta = ({ data }) => {
+const TicketOferta = item => {
   return (
-    <div className="ticketDetail">
+    <div className="ticketOferta">
       <Card bg="secondary" text="light" style={{ width: "18rem" }}>
         <Card.Text>
           <br />
           <h3>Ofrece: </h3>
-          <span>{data.user}</span>
+          <span>{item.items.user}</span>
           <br />
           <span>
-            <h3>Fecha que ofrece a cambio: </h3>
-            <span>{data.date}</span>
+            <h3>Fecha que ofrece cambiar:</h3>
+            <span>{item.items.date_cambio}</span>
           </span>
         </Card.Text>
       </Card>

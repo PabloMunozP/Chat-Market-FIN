@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import TicketDetail from "./TicketDetail";
 import FooterPage from "./FooterPage";
 import LoadingSpinner from "./LoadingSpinner";
+import OfertaContainer from "./OfertaContainer";
 
 import productServices from "../services/productServices";
 
@@ -31,6 +32,7 @@ const TicketDetailContainer = () => {
             <TicketDetail items={arrayItems2}></TicketDetail>
           </div>
           <div className="ofertasContain"></div>
+          <OfertaContainer></OfertaContainer>
           <FooterPage></FooterPage>
         </>
       )}
