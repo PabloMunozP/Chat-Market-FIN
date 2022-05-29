@@ -16,6 +16,7 @@ const OfertaContainer = () => {
     ofertaServices(userID).then(res => {
       setarrayItems(res);
       setIsLoading(false);
+      console.log(res);
     });
   }, [userID]);
 

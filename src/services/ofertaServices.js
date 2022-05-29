@@ -1,4 +1,4 @@
-// const arrayOfertas = [
+// const arrayTickets = [
 //   {
 //     id: 1,
 //     user_resp:"isa"

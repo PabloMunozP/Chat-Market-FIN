@@ -50,30 +50,31 @@ class getOfertas(View):
                         oferta['user_ask'] = user['user']
 
         json_tickets = json.dumps(list(ofertas), cls=DjangoJSONEncoder)
+        print(json_tickets)
         return HttpResponse(json_tickets)
 
 
 class createTicket(View):
 
-    def get(self, request):
+    def post(self, request):
         # recibe el usuario y fecha
         body = json.loads(request.body)
         fecha = body['date']
-        user = Usuario.objects.filter(name=body['user'])
-        new_ticket = Ticket(who_ask=user[0], fecha=fecha)
+        user = Usuario.objects.filter(user=body['user'])
+        new_ticket = Ticket(who_ask=user[0], date=fecha)
         new_ticket.save()
         return HttpResponse('OK')
 
 
 class createOferta(View):
 
-    def get(self, request):
+    def post(self, request):
         body = json.loads(request.body)
         fecha = body['date']
         id_ticket = Ticket.objects.filter(pk=body['id_ticket'])
-        user = Usuario.objects.filter(name=body['user'])
+        user = Usuario.objects.filter(user=body['user'])
         oferta = Oferta(
-            who_resp=user[0], fecha_cambio=fecha, id_ticket=id_ticket[0])
+            who_resp=user[0], date_cambio=fecha, id_ticket=id_ticket[0])
         oferta.save()
 
         return HttpResponse('OK')
