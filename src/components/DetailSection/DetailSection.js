@@ -1,15 +1,20 @@
-import { Wrapper, Heading, DateText, UsernameText, Container, Button, OfferForm } from "./DetailSectionElements";
-
+import { Wrapper, Heading, DateText, UsernameText, Container, Button, OfferForm,StyledLink } from "./DetailSectionElements";
+import {Link} from "react-router-dom"
 const DetailSection = () => {
+    
     return (
         <Wrapper>
             <Container>
                 <Heading>Detalles</Heading>
-                <DateText>{`Fecha:`}</DateText>
-                <UsernameText>{`Solicita:`}</UsernameText>
+                <DateText>{`Fecha: 29/05/2022, 02:44 `}</DateText>
+                <UsernameText>{`Solicita: pablo `}</UsernameText>
                 <OfferForm>
                     <input placeholder="Fecha"/>
-                    <Button>Hacer Oferta</Button>
+                    <Button>
+                        <StyledLink to={"/"}>
+                        Hacer Oferta
+                        </StyledLink>
+                        </Button>
                 </OfferForm>
             </Container>
 

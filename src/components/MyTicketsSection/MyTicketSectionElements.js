@@ -2,7 +2,7 @@ import { stepLabelClasses } from "@mui/material";
 import styled from "styled-components";
 
 export const TicketContainer = styled.div`
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin: 50px 50px;

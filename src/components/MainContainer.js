@@ -6,5 +6,6 @@ export const MainContainer = styled.div`
     background: #325ea8;
     border-radius: 15px;
     display: flex;
+    margin: 50px;
 `
     

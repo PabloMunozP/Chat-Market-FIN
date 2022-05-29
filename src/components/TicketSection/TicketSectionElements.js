@@ -33,6 +33,9 @@ export const Button = styled(Link)`
     height: 30%;
     background: #098aed;
     border-radius: 10px;
+    &:hover {
+        color: black;
+    }
 `
 export const TextContainer = styled.div`
     display: flex;

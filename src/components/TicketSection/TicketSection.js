@@ -7,9 +7,9 @@ export const TicketSection = ({items}) => {
                <Ticket>
                 <TextContainer>
                      <DateText>{item.date} </DateText>
-                    <UsernameText>{item.name}</UsernameText>
+                    <UsernameText>{item.user}</UsernameText>
                  </TextContainer>
-                  <Button to={`/detail/${item.id}`}>Ofertar</Button>
+                  <Button to={{pathname: `/detail/${item.id}`}} >Ofertar</Button>
               </Ticket>
               </>
     ))             

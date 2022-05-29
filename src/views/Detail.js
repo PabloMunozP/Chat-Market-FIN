@@ -3,7 +3,8 @@ import { MainContainer } from "../components/MainContainer";
 import {Sidebar} from "../components/Sidebar/Sidebar";
 import {Wrapper} from "../components/Wrapper";
 import DetailSection from "../components/DetailSection/DetailSection"
-function Detail() {
+function Detail({item}) {
+  
   return (
     // <div>
     //   </div>main className="listaProductos"></main>
@@ -11,7 +12,7 @@ function Detail() {
     //     <FooterPage></FooterPage>
     //   </footer>
     // </div>
-
+    
     <Wrapper>
       <MainContainer>
         <Sidebar />

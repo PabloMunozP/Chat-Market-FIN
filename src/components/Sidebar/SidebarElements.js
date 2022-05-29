@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Bar = styled.div`
     height: 100%;
     width: 40%;
-    background: #41a0e8;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,10 +13,17 @@ export const Bar = styled.div`
     
     
 `
-
+export const ItemsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 export const SidebarItem = styled(Link)`
     text-decoration: none;
-    color: black;
+    color: black;                                                                                                                                                        
+    &:hover {
+        color: black;
+        
+    }
     
 `
 export const userContainer = styled.div`
@@ -26,4 +33,6 @@ export const userContainer = styled.div`
 export const userImage = styled.img`
     
 `
-export const DateText = styled.h1``
+export const UsernameText = styled.h1`
+    font-size: 24px;
+`

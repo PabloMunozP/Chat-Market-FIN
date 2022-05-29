@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const PostForm = styled.form``
@@ -12,10 +13,11 @@ export const Button = styled.div`
     border-radius: 5px;
     display: flex;
     justify-content: center;
+
 `
 
 export const Wrapper = styled.div`
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

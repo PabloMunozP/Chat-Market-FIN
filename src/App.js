@@ -10,10 +10,10 @@ import Home from "./views/Home";
 import Post from "./views/Post"
 import MyTickets from "./views/MyTickets";
 import Detail from "./views/Detail";
-
 // Provider
 
 function App() {
+  
   return (
     <Router>
       <Routes>

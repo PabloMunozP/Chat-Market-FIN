@@ -5,5 +5,5 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    background: lightblue;
+    background: #9db0c9;
 `
