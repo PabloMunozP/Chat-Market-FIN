@@ -2,7 +2,7 @@ const arrayTickets = [
   {
     id: 1,
     user: "iachurra",
-    date: "3/05/2022, 10:50",
+    date: "03/05/2022, 10:50",
     state: "En espera"
   },
   {
@@ -36,8 +36,7 @@ function delay(ms) {
 const productServices = async id => {
   await delay(2000);
   if (!!id) {
-    const item = arrayTickets[id - 1];
-    return item;
+    return arrayTickets.find(item => item.id === id) || {};
   }
   return arrayTickets;
 };

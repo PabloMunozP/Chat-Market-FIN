@@ -5,8 +5,6 @@ import TicketDetail from "./TicketDetail";
 import FooterPage from "./FooterPage";
 import LoadingSpinner from "./LoadingSpinner";
 
-import FormOferta from "./FormOferta";
-
 import productServices from "../services/productServices";
 
 const TicketDetailContainer = () => {
@@ -32,9 +30,7 @@ const TicketDetailContainer = () => {
           <div className="detailContainer">
             <TicketDetail items={arrayItems2}></TicketDetail>
           </div>
-          <div className="ofertasContain">
-            <FormOferta></FormOferta>
-          </div>
+          <div className="ofertasContain"></div>
           <FooterPage></FooterPage>
         </>
       )}
