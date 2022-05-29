@@ -18,7 +18,6 @@ const TicketDetailContainer = () => {
     productServices(userID).then(res => {
       setarrayItems(res);
       setIsLoading(false);
-      console.log(res);
     });
   }, [userID]);
 
@@ -31,6 +30,7 @@ const TicketDetailContainer = () => {
           <div className="detailContainer">
             <TicketDetail items={arrayItems2}></TicketDetail>
           </div>
+          <div className="ofertasContain"></div>
           <FooterPage></FooterPage>
         </>
       )}
